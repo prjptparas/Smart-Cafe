@@ -45,27 +45,27 @@ This project is built using a standard Web Development Stack (LAMP/XAMPP).<br><b
 - **Checkout**: Goes to the Cart page, reviews items, enters Name/Phone &amp; clicks "Place Order".<br>
 - **Order Saved**: JavaScript sends the cart data via AJAX to place_order.php, which saves it securely in the MySQL database.<br>
 - **Order Tracking**: Customer is redirected to ```track-order.php``` where they can see if their food is Pending, Preparing &amp; Ready.<br>
-- p**Feedback**: After eating, the customer submits a rating &amp; comment on the Feedback page.<br><br><br>
+- **Feedback**: After eating, the customer submits a rating &amp; comment on the Feedback page.<br><br><br>
 
 ## 📊 Project Flow Diagram
 <br>
   
 ```
-                                              Browser (HTML/CSS/JS)
-                                                        ⬇
-                                 Customer Clicks "Place Order" (AJAX/Fetch API)
-                                                        ⬇
-                                            Apache Web Server (XAMPP)
-                                                        ⬇
-                                             Backend Logic (PHP APIs)
-                                                        ⬇
-                                    Database Query (PDO Prepared Statements)
-                                                        ⬇
-                                        MySQL Database (Stores Order Data)
-                                                        ⬇
-                                            Success Message (JSON)
-                                                        ⬇
-                                            Browser Updates Screen
+             Browser (HTML/CSS/JS)
+                       ⬇
+Customer Clicks "Place Order" (AJAX/Fetch API)
+                       ⬇
+           Apache Web Server (XAMPP)
+                       ⬇
+            Backend Logic (PHP APIs)
+                       ⬇
+   Database Query (PDO Prepared Statements)
+                       ⬇
+       MySQL Database (Stores Order Data)
+                       ⬇
+           Success Message (JSON)
+                       ⬇
+           Browser Updates Screen
 ```
 <br><br>
 
