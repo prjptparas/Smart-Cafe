@@ -36,7 +36,7 @@ This project is built using a standard Web Development Stack (LAMP/XAMPP).<br><b
 - **Prepared Statements**: A secure way to write SQL queries in PHP to protect the database against SQL Injection attacks.<br>
 - **Bootstrap Icons**: Used to display high-quality scalable icons (like cart, user, trash bin) across the website.<br><br><br>
 
-## 🗂️ Website Workflow (Customer Journey)
+## 📁 Website Workflow (Customer Journey)
 - **Customer opens website**: Usually by scanning a QR code on their table, which sets their table number automatically.<br>
 - **Homepage**: Views popular items, interactive statistics &amp; a "How it Works" guide.<br>
 - **Menu**: Browses the full digital menu.<br>
@@ -68,6 +68,27 @@ Customer Clicks "Place Order" (AJAX/Fetch API)
            Browser Updates Screen
 ```
 <br><br>
+
+## 🗂️ Project Architecture
+```
+Smart-Cafe/
+├── admin/                   # Admin Dashboard, Menu & Order Management
+│   ├── uploads              # Food Images are saved when Admin uploads a new food item from Dashboard.
+├── api/                     # PHP Files act as a gap for JavaScript Frontend & Database
+├── asset/                   # Static Images & Custom CSS & JavaScript Files
+├── config/                  # Contains (database.php) which holds connection details to connect PHP to MySQL
+├── database/                # Contains (schema.sql) which is backup script for all database in phpMyAdmin
+├── includes/                # Contains Reusable PHP component like (header.php), (footer.php) & (auth.php)
+├── pages/                   # Contains the main pages for customer like (menu.php), (cart.php), (track-order.php) & (feedback.php)
+├── README.md                # GitHub Repository's README File
+├── UI-UX Design.pdf         # Contains Website Screenshot's for UI-UX graphics
+├── fix_pwd.sql              # Setting up fix password & username
+├── hash.php                 # Set up password hash
+├── index.php                # Website's Main Page PHP Code
+├── reset_password.php       # Reset Password Page PHP Code
+├── test_images.php
+└── test_pasta.jpg
+```
 
 ## 🤝 Contributing
 Feel free to fork the repository &amp; submit the pull requests. If you find any bugs or want to suggest new features, please open an issue in the GitHub Repository.
